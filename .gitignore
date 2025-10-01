@@ -1,0 +1,12 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build (dacă în viitor folosești un bundler, ex. Vite, Webpack, Next)
+dist/
+build/
+
+# Sistem
+.DS_Store
+Thumbs.db

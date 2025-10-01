@@ -26,16 +26,16 @@
 
 
     <section
-        class="flex flex-col justify-between items-center sm:h-[75vh] md:h-[85vh] gap-4 z-10 pt-10 sm:pt-20 md:pt-28">
+        class="flex flex-col justify-center items-center sm:h-[75vh] md:h-[85vh] gap-4 z-10 pt-10 sm:pt-20 md:pt-28">
         <div class="flex flex-col justify-center items-center gap-4">
             <h1 class="text-5xl sm:text-6xl lg:text-8xl font-bold text-center">Andra Săsărman</h1>
-            <h3 class="text-3xl sm:text-4xl lg:text-5xl font-normal text-center">Web Developer & UI/UX Enthusiast</h3>
+            <h3 class="text-3xl sm:text-4xl lg:text-5xl font-normal text-center">Front-End Web Developer & UI/UX Enthusiast</h3>
             <p class="text-lg sm:text-2xl sm:w-[80%] lg:w-[50%] text-center mt-5">I build intuitive and responsive web
                 applications, combining clean code with user-centered design. Passionate about solving problems through
                 technology and creating seamless digital experiences.</p>
         </div>
 
-        <img src="./images/myself.png" class="h-[250px] sm:h-1/2 z-10" alt="myself">
+        <!-- <img src="./images/myself.png" class="h-[250px] sm:h-1/2 z-10" alt="myself"> -->
     </section>
 
 
@@ -43,16 +43,14 @@
     <section id="about" class=" flex flex-col justify-center items-center mt-12 sm:mt-20 md:mt-[140px] z-10">
         <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 sm:mb-8">About me</h2>
         <p class="text-lg sm:text-2xl sm:w-[80%] lg:w-[50%] text-center ">I am a passionate <span
-                class="text-[#8956FF]">Web Developer </span>with hands-on experience in both front-end and WordPress
-            development. My journey includes freelancing, internships, and collaborative projects where I built
+                class="text-[#8956FF]">Front-End Web Developer </span>with hands-on experience in both front-end and WordPress
+            development. My journey includes freelancing and collaborative projects where I built
             websites, web apps, and responsive interfaces.</p>
         <p class="text-lg sm:text-2xl sm:w-[80%] lg:w-[50%] text-center mt-6">Skilled in <span
                 class="text-[#8956FF]">JavaScript, React, Tailwind, WordPress, and UI/UX design,</span> I enjoy
             transforming ideas into functional and visually engaging solutions.</p>
     </section>
     <img src="./images/second.png" class="absolute z-0 h-1/3 left-[10%] object-cover" alt="component">
-
-
 
 
     <section id="projects" class=" flex flex-col justify-center items-center mt-12 sm:mt-20 md:mt-[140px] z-10">
@@ -63,19 +61,36 @@
             existing UI designs, ensuring pixel-perfect execution and functional integration.
             Collaborated with designers to translate Figma layouts into clean code.</p>
 
-        <div class="flex flex-col md:flex-row justify-between w-full my-7 sm:my-12 gap-8 md:gap-0">
-            <a href="https://ecpp.eu/" target="_blank"
-                class=" relative h-[250px] md:w-[30%] rounded-3xl shadow-lg shadow-[#ece5fd] hover:shadow-2xl hover:shadow-[#c4aaff] transition duration-300 ease-in-out">
-                <img
-                    src="./images/ecpp.png" class="object-cover rounded-3xl h-full w-full" alt="project1"></a>
-            <a href="https://clujnapoca2030.ro/" target="_blank"
-                class="h-[250px] md:w-[30%] rounded-3xl shadow-lg shadow-[#ece5fd] hover:shadow-2xl hover:shadow-[#c4aaff] transition duration-300 ease-in-out"><img
-                    src="./images/net-zero.png" class="object-cover rounded-3xl h-full w-full" alt="project2"></a>
-            <a href="https://treasurup.com/" target="_blank"
-                class="h-[250px] md:w-[30%] rounded-3xl shadow-lg shadow-[#ece5fd] hover:shadow-2xl hover:shadow-[#c4aaff] transition duration-300 ease-in-out"><img
-                    src="./images/treasurup.png" class="object-cover rounded-3xl h-full w-full" alt="project3"></a>
-        </div>
+        <div class="flex flex-col md:flex-row flex-wrap w-full my-7 sm:my-12 gap-8">
+            <!-- Card 1 -->
+            <button type="button" data-modal="modal-ecpp"
+                class="h-[250px] md:w-[30%] rounded-3xl shadow-lg shadow-[#ece5fd] hover:shadow-2xl hover:shadow-[#c4aaff] transition duration-300 ease-in-out overflow-hidden">
+                <img src="./images/ecpp.png" class="object-cover rounded-3xl h-full w-full" alt="ECPP">
+            </button>
 
+            <!-- Card 2 -->
+            <button type="button" data-modal="modal-nzc"
+                class="h-[250px] md:w-[30%] rounded-3xl shadow-lg shadow-[#ece5fd] hover:shadow-2xl hover:shadow-[#c4aaff] transition duration-300 ease-in-out overflow-hidden">
+                <img src="./images/net-zero.png" class="object-cover rounded-3xl h-full w-full" alt="Cluj 2030">
+            </button>
+
+            <!-- Card 3 -->
+            <button type="button" data-modal="modal-treasurup"
+                class="h-[250px] md:w-[30%] rounded-3xl shadow-lg shadow-[#ece5fd] hover:shadow-2xl hover:shadow-[#c4aaff] transition duration-300 ease-in-out overflow-hidden">
+                <img src="./images/treasurup.png" class="object-cover rounded-3xl h-full w-full" alt="TreasurUp">
+            </button>
+
+            <!-- Card 4 -->
+            <button type="button" data-modal="modal-ecpp-campaign"
+                class="h-[250px] md:w-[30%] rounded-3xl shadow-lg shadow-[#ece5fd] hover:shadow-2xl hover:shadow-[#c4aaff] transition duration-300 ease-in-out"><img
+                    src="./images/ecpp-campaign.png" class="object-cover rounded-3xl h-full w-full"
+                    alt="project3"></button>
+
+            <!-- Card 5 -->
+            <button type="button" data-modal="modal-enipau"
+                class="h-[250px] md:w-[30%] rounded-3xl shadow-lg shadow-[#ece5fd] hover:shadow-2xl hover:shadow-[#c4aaff] transition duration-300 ease-in-out"><img
+                    src="./images/enipau.png" class="object-cover rounded-3xl h-full w-full" alt="project3"></button>
+        </div>
 
 
         <p class="text-lg sm:text-2xl sm:w-[80%] lg:w-[50%] text-center font-bold  mt-4 sm:mt-8">Design + Development
@@ -109,6 +124,12 @@
                     alt="project2"></a>
             <a href="#" class="md:w-[30%] hidden md:flex"></a>
         </div>
+        <p class="text-lg sm:text-2xl sm:w-[80%] lg:w-[50%] text-center font-bold  mt-4 sm:mt-8">React Projects
+        </p>
+        <p class="text-base sm:w-[80%] lg:w-[50%] text-center">A collection of React applications demonstrating modern front-end development skills, including component-based architecture, state management, and dynamic UI interactions.</p>
+        <a href="https://github.com/andrasasarman/web-projects/tree/main/react%20projects" target="_blank">
+            <button class="mt-6 inline-block px-6 py-3 rounded-full bg-[#8956FF] text-white font-semibold">View on GitHub</button>
+          </a>
     </section>
 
 
@@ -129,6 +150,11 @@
         </div>
     </section>
     <img src="./images/third.png" class="absolute z-0 h-1/2 right-0 object-cover" alt="component">
+
+
+    <div id="modals-container"></div>
+
+    <script src="./scripts/modals.js"></script>
 </body>
 
 </html>
